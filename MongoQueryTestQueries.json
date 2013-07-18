@@ -277,6 +277,45 @@
         "query": {
             "test": {
                 "$in": [
+                    "3",
+                    "4",
+                    "5"
+                ]
+            }
+        },
+        "document": {
+            "test": ["2","4","6","8"]
+        },
+        "options": [
+
+        ],
+        "result": true,
+        "description": "in true (doc array)"
+    },
+    {
+        "query": {
+            "test": {
+                "$in": [
+                    "3",
+                    "4",
+                    "5"
+                ]
+            }
+        },
+        "document": {
+            "test": ["1","6"]
+        },
+        "options": [
+
+        ],
+        "result": true,
+        "description": "in true (doc array)"
+    },
+	
+    {
+        "query": {
+            "test": {
+                "$in": [
                     3,
                     4,
                     5
@@ -290,7 +329,7 @@
 
         ],
         "result": true,
-        "description": "in true"
+        "description": "in true (doc int / string)"
     },
     {
         "query": {
@@ -309,7 +348,7 @@
 
         ],
         "result": false,
-        "description": "in true"
+        "description": "in true (doc int / string)"
     },
     {
         "query": {
