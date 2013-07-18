@@ -600,6 +600,23 @@
     },
     {
         "query": {
+            "test.test.value": 3
+        },
+        "document": {
+            "test": {
+                "test": {
+                    "value": 3
+                }
+            }
+        },
+        "options": [
+ 
+        ],
+        "result": true,
+        "description": "element traversal"
+    },
+    {
+        "query": {
             "$or": [
                 {
                     "$nor": [
@@ -634,19 +651,26 @@
     },
     {
         "query": {
-            "test.test.value": 3
-        },
+			"project":"/[a-z]+MongoQuery/i",
+			"version":{"$gte":"1.0"},
+			"authors.email":"nick@akkroo.com"
+		},
         "document": {
-            "test": {
-                "test": {
-                    "value": 3
-                }
-            }
-        },
+			"project":"PHPMongoQuery",
+			"license":"MIT",
+			"company":"Akkroo",
+			"version":"1.0"
+			"authors":[
+				{
+					"name":"Nick Brook",
+					"email":"nick@akkroo.com"
+				}
+			]
+		},
         "options": [
 
         ],
         "result": true,
-        "description": "element traversal"
+        "description": "complex query 2"
     }
 ]
