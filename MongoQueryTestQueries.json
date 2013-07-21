@@ -308,8 +308,8 @@
         "options": [
 
         ],
-        "result": true,
-        "description": "in true (doc array)"
+        "result": false,
+        "description": "in false (doc array)"
     },
 	
     {
