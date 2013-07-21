@@ -1,0 +1,12 @@
+{
+  "name": "MongoQueryTests",
+  "version": "0.0.1",
+  "description": "The tests for the JSMongoQuery and PHPMongoQuery libraries",
+  "main": "MongoQueryTestQueries.json",
+  "scripts": {
+    "test": "node node_modules/jsonlint/lib/cli.js MongoQueryTestQueries.json"
+  },
+  "devDependencies": {
+    "jsonlint": "1.6.x"
+  }
+}
